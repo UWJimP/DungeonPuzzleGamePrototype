@@ -122,7 +122,7 @@ public abstract class Enemy extends GameCharacter {
 				this.setFacingDirection(Direction.EAST);
 				return true;
 			} else if(theBoard[theY][x].getSymbol() != ' ') {
-				x = theBoard.length;
+				x = theBoard[0].length;
 			}
 		}
 		return false;
